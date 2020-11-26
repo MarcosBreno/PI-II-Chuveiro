@@ -3,8 +3,8 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
  
-String apiKey = "MIIP78TGGCQ8ZRG6"; // Enter your Write API key from ThingSpeak
-const char *ssid = "Cavalcante";     // replace with your wifi ssid and wpa2 key
+String apiKey = "MIIP78TGGCQ8ZRG6"; 
+const char *ssid = "Cavalcante";     
 const char *pass = "15052406";
 const char* server = "api.thingspeak.com";
 
@@ -96,7 +96,7 @@ void loop()
  
   }
   
-  if (client.connect(server, 80)) // "184.106.153.149" or api.thingspeak.com
+  if (client.connect(server, 80))
   {
     String postStr = apiKey;
       postStr += "&field1=";
